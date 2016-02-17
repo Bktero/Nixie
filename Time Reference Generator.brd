@@ -1249,6 +1249,28 @@ grid 5 mm, outline 2.5 x 7.5 mm</description>
 <text x="-3.429" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-3.429" y="-2.794" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="C050-030X075">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
+grid 5 mm, outline 3 x 7.5 mm</description>
+<wire x1="-0.3048" y1="0.635" x2="-0.3048" y2="0" width="0.3048" layer="21"/>
+<wire x1="-0.3048" y1="0" x2="-0.3048" y2="-0.635" width="0.3048" layer="21"/>
+<wire x1="-0.3048" y1="0" x2="-1.524" y2="0" width="0.1524" layer="21"/>
+<wire x1="0.3302" y1="0.635" x2="0.3302" y2="0" width="0.3048" layer="21"/>
+<wire x1="0.3302" y1="0" x2="0.3302" y2="-0.635" width="0.3048" layer="21"/>
+<wire x1="0.3302" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
+<wire x1="-3.683" y1="1.27" x2="-3.683" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-3.429" y1="-1.524" x2="3.429" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="3.683" y1="-1.27" x2="3.683" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="3.429" y1="1.524" x2="-3.429" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="3.429" y1="1.524" x2="3.683" y2="1.27" width="0.1524" layer="21" curve="-90"/>
+<wire x1="3.429" y1="-1.524" x2="3.683" y2="-1.27" width="0.1524" layer="21" curve="90"/>
+<wire x1="-3.683" y1="-1.27" x2="-3.429" y2="-1.524" width="0.1524" layer="21" curve="90"/>
+<wire x1="-3.683" y1="1.27" x2="-3.429" y2="1.524" width="0.1524" layer="21" curve="-90"/>
+<pad name="1" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
+<pad name="2" x="2.54" y="0" drill="0.8128" shape="octagon"/>
+<text x="-3.556" y="1.905" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.556" y="-3.048" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 </library>
 <library name="PGT">
@@ -1399,7 +1421,7 @@ design rules under a new name.</description>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
-<param name="slThermalIsolate" value="10mil"/>
+<param name="slThermalIsolate" value="25mil"/>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
@@ -1511,12 +1533,14 @@ design rules under a new name.</description>
 <element name="R2_S" library="resistor" package="0207/10" value="220k" x="36.83" y="11.43" rot="R90"/>
 <element name="R1" library="resistor" package="0207/10" value="10M" x="40.64" y="21.59" rot="R270"/>
 <element name="C1" library="resistor" package="C050-025X075" value="25p" x="40.64" y="10.16" rot="R90"/>
-<element name="C2" library="resistor" package="C050-025X075" value="25p" x="34.29" y="26.67" rot="R180"/>
+<element name="C2" library="resistor" package="C050-025X075" value="25p" x="40.64" y="35.56" rot="R90"/>
 <element name="IC2" library="40xx" package="DIL14" value="4013N" x="27.94" y="35.56"/>
 <element name="POWER_SUPPY" library="PGT" package="SIL_2_0.2INCH" value="CON_2_SIL" x="10.16" y="10.16" rot="R180"/>
 <element name="OUTPUT" library="PGT" package="SIL_2_0.2INCH" value="CON_2_SIL" x="10.16" y="35.56" rot="R180"/>
 <element name="JP1" library="jumper" package="JP3Q" value="FREQ_SELECT" x="12.7" y="22.86" rot="R270"/>
 <element name="X1" library="PGT" package="WATCH-3X8-SPACED" value="CRYSTAL_TINY" x="36.83" y="20.32" rot="R90"/>
+<element name="C3" library="resistor" package="C050-030X075" value="100n" x="31.75" y="22.86" rot="R270"/>
+<element name="C4" library="resistor" package="C050-030X075" value="100n" x="16.51" y="38.1" rot="R270"/>
 </elements>
 <signals>
 <signal name="VDD">
@@ -1529,12 +1553,15 @@ design rules under a new name.</description>
 <wire x1="22.86" y1="7.62" x2="22.86" y2="22.86" width="1.016" layer="16"/>
 <wire x1="22.86" y1="22.86" x2="25.4" y2="25.4" width="1.016" layer="16"/>
 <wire x1="25.4" y1="25.4" x2="26.67" y2="25.4" width="1.016" layer="16"/>
-<wire x1="20.32" y1="39.37" x2="19.05" y2="40.64" width="1.016" layer="16"/>
-<wire x1="19.05" y1="40.64" x2="8.89" y2="40.64" width="1.016" layer="16"/>
-<wire x1="8.89" y1="40.64" x2="5.08" y2="36.83" width="1.016" layer="16"/>
-<wire x1="5.08" y1="36.83" x2="5.08" y2="11.43" width="1.016" layer="16"/>
-<wire x1="5.08" y1="11.43" x2="8.89" y2="7.62" width="1.016" layer="16"/>
-<wire x1="8.89" y1="7.62" x2="10.16" y2="7.62" width="1.016" layer="16"/>
+<contactref element="C3" pad="1"/>
+<contactref element="C4" pad="1"/>
+<wire x1="26.67" y1="25.4" x2="31.75" y2="25.4" width="1.016" layer="16"/>
+<wire x1="16.51" y1="40.64" x2="7.62" y2="40.64" width="1.016" layer="16"/>
+<wire x1="7.62" y1="40.64" x2="5.08" y2="38.1" width="1.016" layer="16"/>
+<wire x1="5.08" y1="38.1" x2="5.08" y2="12.7" width="1.016" layer="16"/>
+<wire x1="5.08" y1="12.7" x2="10.16" y2="7.62" width="1.016" layer="16"/>
+<wire x1="16.51" y1="40.64" x2="19.05" y2="40.64" width="1.016" layer="16"/>
+<wire x1="19.05" y1="40.64" x2="20.32" y2="39.37" width="1.016" layer="16"/>
 </signal>
 <signal name="GND">
 <contactref element="POWER_SUPPY" pad="P$2"/>
@@ -1552,6 +1579,8 @@ design rules under a new name.</description>
 <vertex x="44.45" y="1.27"/>
 <vertex x="44.45" y="44.45"/>
 </polygon>
+<contactref element="C3" pad="2"/>
+<contactref element="C4" pad="2"/>
 </signal>
 <signal name="8_HZ">
 <contactref element="IC1" pad="1"/>
@@ -1561,8 +1590,8 @@ design rules under a new name.</description>
 <signal name="TIME_REFERENCE">
 <contactref element="IC2" pad="1"/>
 <contactref element="OUTPUT" pad="P$1"/>
-<wire x1="10.16" y1="33.02" x2="19.05" y2="33.02" width="1.016" layer="16"/>
-<wire x1="19.05" y1="33.02" x2="20.32" y2="31.75" width="1.016" layer="16"/>
+<wire x1="20.32" y1="31.75" x2="11.43" y2="31.75" width="1.016" layer="16"/>
+<wire x1="11.43" y1="31.75" x2="10.16" y2="33.02" width="1.016" layer="16"/>
 </signal>
 <signal name="N$5">
 <contactref element="IC2" pad="2"/>
@@ -1585,16 +1614,18 @@ design rules under a new name.</description>
 <signal name="N$1">
 <contactref element="C2" pad="1"/>
 <contactref element="R1" pad="1"/>
-<wire x1="36.83" y1="26.67" x2="40.64" y2="26.67" width="1.016" layer="16"/>
+<wire x1="40.64" y1="33.02" x2="40.64" y2="26.67" width="1.016" layer="16"/>
 <contactref element="IC1" pad="11"/>
 <contactref element="X1" pad="2"/>
-<wire x1="36.83" y1="26.67" x2="36.83" y2="21.505" width="1.016" layer="16"/>
 <wire x1="36.83" y1="21.505" x2="36.745" y2="21.59" width="1.016" layer="16"/>
-<wire x1="36.745" y1="21.59" x2="34.29" y2="21.59" width="1.016" layer="16"/>
-<wire x1="34.29" y1="21.59" x2="33.02" y2="20.32" width="1.016" layer="16"/>
-<wire x1="33.02" y1="20.32" x2="33.02" y2="13.97" width="1.016" layer="16"/>
-<wire x1="33.02" y1="13.97" x2="31.75" y2="12.7" width="1.016" layer="16"/>
-<wire x1="31.75" y1="12.7" x2="26.67" y2="12.7" width="1.016" layer="16"/>
+<wire x1="36.745" y1="21.59" x2="35.56" y2="21.59" width="1.016" layer="16"/>
+<wire x1="35.56" y1="21.59" x2="34.29" y2="20.32" width="1.016" layer="16"/>
+<wire x1="34.29" y1="20.32" x2="34.29" y2="13.97" width="1.016" layer="16"/>
+<wire x1="34.29" y1="13.97" x2="33.02" y2="12.7" width="1.016" layer="16"/>
+<wire x1="33.02" y1="12.7" x2="26.67" y2="12.7" width="1.016" layer="16"/>
+<wire x1="40.64" y1="26.67" x2="38.1" y2="26.67" width="1.016" layer="16"/>
+<wire x1="38.1" y1="26.67" x2="36.83" y2="25.4" width="1.016" layer="16"/>
+<wire x1="36.83" y1="25.4" x2="36.83" y2="21.505" width="1.016" layer="16"/>
 </signal>
 <signal name="N$3">
 <contactref element="R2_S" pad="1"/>
