@@ -192,92 +192,10 @@ LETTER landscape</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="russian-nixies">
-<description>&lt;b&gt;Russian IN series nixie tubes&lt;/b&gt;&lt;br&gt;&lt;br&gt;
-
-Based on the following sources:
-&lt;ul&gt;
-&lt;li&gt;Measurements taken from nixies in my collection
-&lt;li&gt;http://www.tube-tester.com
-&lt;/ul&gt;&lt;br&gt;
-&lt;author&gt;Created by p.s.troost@student.tue.nl&lt;/author&gt;</description>
-<packages>
-<package name="IN-14">
-<wire x1="-7.62" y1="-0.1588" x2="7.6201" y2="0" width="0.254" layer="21" curve="-180"/>
-<circle x="0" y="0" radius="8.8744" width="0.254" layer="21"/>
-<pad name="A" x="0" y="-6.1899" drill="0.84"/>
-<pad name="LHDP" x="2.8766" y="-5.4809" drill="0.84"/>
-<pad name="0" x="5.0942" y="-3.5163" drill="0.84"/>
-<pad name="9" x="6.1448" y="-0.7461" drill="0.84"/>
-<pad name="8" x="5.7877" y="2.195" drill="0.84"/>
-<pad name="7" x="4.1047" y="4.6332" drill="0.84"/>
-<pad name="6" x="1.4813" y="6.0101" drill="0.84"/>
-<pad name="5" x="-1.4813" y="6.0101" drill="0.84"/>
-<pad name="4" x="-4.1047" y="4.6332" drill="0.84"/>
-<pad name="3" x="-5.7877" y="2.195" drill="0.84"/>
-<pad name="2" x="-6.1448" y="-0.7461" drill="0.84"/>
-<pad name="1" x="-5.0942" y="-3.5163" drill="0.84"/>
-<pad name="RHDP" x="-2.8766" y="-5.4809" drill="0.84"/>
-<text x="11.2713" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-</package>
-</packages>
-<symbols>
-<symbol name="IN-14">
-<wire x1="-5.08" y1="-13.335" x2="-5.08" y2="10.795" width="0.4064" layer="94"/>
-<wire x1="-5.08" y1="-13.335" x2="7.62" y2="-13.335" width="0.4064" layer="94" curve="180"/>
-<wire x1="7.62" y1="-13.335" x2="7.62" y2="10.795" width="0.4064" layer="94"/>
-<wire x1="-5.08" y1="10.795" x2="7.62" y2="10.795" width="0.4064" layer="94" curve="-180"/>
-<text x="-2.54" y="18.415" size="1.778" layer="95">&gt;NAME</text>
-<pin name="1" x="-7.62" y="10.16" visible="pin" length="short"/>
-<pin name="2" x="-7.62" y="7.62" visible="pin" length="short"/>
-<pin name="3" x="-7.62" y="5.08" visible="pin" length="short"/>
-<pin name="4" x="-7.62" y="2.54" visible="pin" length="short"/>
-<pin name="5" x="-7.62" y="0" visible="pin" length="short"/>
-<pin name="6" x="-7.62" y="-2.54" visible="pin" length="short"/>
-<pin name="7" x="-7.62" y="-5.08" visible="pin" length="short"/>
-<pin name="8" x="-7.62" y="-7.62" visible="pin" length="short"/>
-<pin name="9" x="-7.62" y="-10.16" visible="pin" length="short"/>
-<pin name="0" x="-7.62" y="-12.7" visible="pin" length="short"/>
-<pin name="RHDP" x="10.16" y="-12.7" visible="pin" length="short" rot="R180"/>
-<pin name="A" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
-<pin name="LHDP" x="10.16" y="10.16" visible="pin" length="short" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="IN-14" prefix="N">
-<description>IN-14: medium numeric &lt;b&gt;frontview&lt;/b&gt; nixie tube</description>
-<gates>
-<gate name="G$1" symbol="IN-14" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="IN-14">
-<connects>
-<connect gate="G$1" pin="0" pad="0"/>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="LHDP" pad="LHDP"/>
-<connect gate="G$1" pin="RHDP" pad="RHDP"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="PGT">
 <packages>
 <package name="TO92">
-<description>&lt;b&gt;TO 92&lt;/b&gt;</description>
+<description>&lt;b&gt;TO 92 for MSPA42&lt;/b&gt; (pins are not numbered in the same way as BC547)</description>
 <wire x1="-2.0946" y1="-1.651" x2="-2.6549" y2="-0.254" width="0.127" layer="21" curve="-32.781"/>
 <wire x1="-2.6549" y1="-0.254" x2="-0.7863" y2="2.5485" width="0.127" layer="21" curve="-78.3185"/>
 <wire x1="0.7863" y1="2.5484" x2="2.0945" y2="-1.651" width="0.127" layer="21" curve="-111.1"/>
@@ -288,14 +206,14 @@ Based on the following sources:
 <wire x1="2.2537" y1="-0.254" x2="2.6549" y2="-0.254" width="0.127" layer="21"/>
 <wire x1="0.2863" y1="-0.254" x2="2.2537" y2="-0.254" width="0.127" layer="51"/>
 <wire x1="-0.7863" y1="2.5485" x2="0.7863" y2="2.5485" width="0.127" layer="51" curve="-34.2936"/>
-<pad name="1" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="3" x="1.27" y="0" drill="0.8128" shape="octagon"/>
 <pad name="2" x="0" y="1.905" drill="0.8128" shape="octagon"/>
-<pad name="3" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="1" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
 <text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-0.635" y="0.635" size="1.27" layer="51" ratio="10">2</text>
-<text x="-2.159" y="0" size="1.27" layer="51" ratio="10">3</text>
-<text x="1.143" y="0" size="1.27" layer="51" ratio="10">1</text>
+<text x="-2.159" y="0" size="1.27" layer="51" ratio="10">1</text>
+<text x="1.143" y="0" size="1.27" layer="51" ratio="10">3</text>
 </package>
 <package name="SIL_2_0.2INCH">
 <pad name="P$1" x="0" y="2.54" drill="0.9"/>
@@ -305,6 +223,28 @@ Based on the following sources:
 <wire x1="4" y1="5" x2="4" y2="-5" width="0.127" layer="21"/>
 <wire x1="4" y1="-5" x2="-4" y2="-5" width="0.127" layer="21"/>
 <wire x1="-4" y1="-5" x2="-4" y2="5" width="0.127" layer="21"/>
+</package>
+<package name="IN-14">
+<description>IN-14 tubes</description>
+<wire x1="7.62" y1="0.1588" x2="-7.6201" y2="0" width="0.254" layer="21" curve="-180"/>
+<circle x="0" y="0" radius="8.8744" width="0.254" layer="21"/>
+<pad name="A" x="0" y="6.1899" drill="0.84" shape="square" rot="R180"/>
+<pad name="LHDP" x="-2.8766" y="5.4809" drill="0.84" rot="R180"/>
+<pad name="1" x="-5.0942" y="3.5163" drill="0.84" rot="R180"/>
+<pad name="2" x="-6.1448" y="0.7461" drill="0.84" rot="R180"/>
+<pad name="3" x="-5.7877" y="-2.195" drill="0.84" rot="R180"/>
+<pad name="4" x="-4.1047" y="-4.6332" drill="0.84" rot="R180"/>
+<pad name="5" x="-1.4813" y="-6.0101" drill="0.84" rot="R180"/>
+<pad name="6" x="1.4813" y="-6.0101" drill="0.84" rot="R180"/>
+<pad name="7" x="4.1047" y="-4.6332" drill="0.84" rot="R180"/>
+<pad name="8" x="5.7877" y="-2.195" drill="0.84" rot="R180"/>
+<pad name="9" x="6.1448" y="0.7461" drill="0.84" rot="R180"/>
+<pad name="0" x="5.0942" y="3.5163" drill="0.84" rot="R180"/>
+<pad name="RHDP" x="2.8766" y="5.4809" drill="0.84" rot="R180"/>
+<text x="-11.2713" y="2.54" size="1.27" layer="25" rot="R270">&gt;NAME</text>
+<text x="-0.635" y="3.81" size="1.27" layer="21">A</text>
+<text x="-4.445" y="-2.54" size="1.27" layer="21">3</text>
+<text x="3.81" y="-2.54" size="1.27" layer="21">8</text>
 </package>
 </packages>
 <symbols>
@@ -337,6 +277,27 @@ Based on the following sources:
 <wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
 <text x="-3.81" y="6.35" size="1.778" layer="94">&gt;NAME</text>
 </symbol>
+<symbol name="IN-14">
+<description>IN-14 tubes</description>
+<wire x1="-5.08" y1="-13.335" x2="-5.08" y2="10.795" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="-13.335" x2="7.62" y2="-13.335" width="0.4064" layer="94" curve="180"/>
+<wire x1="7.62" y1="-13.335" x2="7.62" y2="10.795" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="10.795" x2="7.62" y2="10.795" width="0.4064" layer="94" curve="-180"/>
+<text x="-2.54" y="18.415" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="-7.62" y="10.16" visible="pin" length="short"/>
+<pin name="2" x="-7.62" y="7.62" visible="pin" length="short"/>
+<pin name="3" x="-7.62" y="5.08" visible="pin" length="short"/>
+<pin name="4" x="-7.62" y="2.54" visible="pin" length="short"/>
+<pin name="5" x="-7.62" y="0" visible="pin" length="short"/>
+<pin name="6" x="-7.62" y="-2.54" visible="pin" length="short"/>
+<pin name="7" x="-7.62" y="-5.08" visible="pin" length="short"/>
+<pin name="8" x="-7.62" y="-7.62" visible="pin" length="short"/>
+<pin name="9" x="-7.62" y="-10.16" visible="pin" length="short"/>
+<pin name="0" x="-7.62" y="-12.7" visible="pin" length="short"/>
+<pin name="RHDP" x="10.16" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="A" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="LHDP" x="10.16" y="10.16" visible="pin" length="short" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MPSA42" prefix="T">
@@ -367,6 +328,34 @@ Based on the following sources:
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IN-14" prefix="N">
+<description>IN-14: medium numeric &lt;b&gt;frontview&lt;/b&gt; nixie tube</description>
+<gates>
+<gate name="G$1" symbol="IN-14" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="IN-14">
+<connects>
+<connect gate="G$1" pin="0" pad="0"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="LHDP" pad="LHDP"/>
+<connect gate="G$1" pin="RHDP" pad="RHDP"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7008,8 +6997,8 @@ high speed (Philips)</description>
 </classes>
 <parts>
 <part name="FRAME1" library="frames" deviceset="LETTER_L" device="" value="TUBES_FOR_SECONDS"/>
-<part name="SECONDS_UNITS" library="russian-nixies" deviceset="IN-14" device=""/>
-<part name="SECONDS_TENS" library="russian-nixies" deviceset="IN-14" device=""/>
+<part name="SECONDS_UNITS" library="PGT" deviceset="IN-14" device=""/>
+<part name="SECONDS_TENS" library="PGT" deviceset="IN-14" device=""/>
 <part name="T1" library="PGT" deviceset="MPSA42" device=""/>
 <part name="T2" library="PGT" deviceset="MPSA42" device=""/>
 <part name="T3" library="PGT" deviceset="MPSA42" device=""/>
@@ -7047,8 +7036,8 @@ high speed (Philips)</description>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME2" library="frames" deviceset="LETTER_L" device="" value="TUBES_FOR_MINUTES"/>
-<part name="MINUTES_UNITS" library="russian-nixies" deviceset="IN-14" device=""/>
-<part name="MINUTES_TENS" library="russian-nixies" deviceset="IN-14" device=""/>
+<part name="MINUTES_UNITS" library="PGT" deviceset="IN-14" device=""/>
+<part name="MINUTES_TENS" library="PGT" deviceset="IN-14" device=""/>
 <part name="T16" library="PGT" deviceset="MPSA42" device=""/>
 <part name="T17" library="PGT" deviceset="MPSA42" device=""/>
 <part name="T18" library="PGT" deviceset="MPSA42" device=""/>
@@ -7086,13 +7075,12 @@ high speed (Philips)</description>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME3" library="frames" deviceset="LETTER_L" device="" value="TUBES_FOR_HOURS"/>
-<part name="HOURS_UNITS" library="russian-nixies" deviceset="IN-14" device=""/>
-<part name="HOURS_TENS" library="russian-nixies" deviceset="IN-14" device=""/>
+<part name="HOURS_UNITS" library="PGT" deviceset="IN-14" device=""/>
+<part name="HOURS_TENS" library="PGT" deviceset="IN-14" device=""/>
 <part name="T32" library="PGT" deviceset="MPSA42" device=""/>
 <part name="T33" library="PGT" deviceset="MPSA42" device=""/>
 <part name="T34" library="PGT" deviceset="MPSA42" device=""/>
 <part name="T35" library="PGT" deviceset="MPSA42" device=""/>
-<part name="T36" library="PGT" deviceset="MPSA42" device=""/>
 <part name="T37" library="PGT" deviceset="MPSA42" device=""/>
 <part name="T38" library="PGT" deviceset="MPSA42" device=""/>
 <part name="T39" library="PGT" deviceset="MPSA42" device=""/>
@@ -7159,6 +7147,7 @@ high speed (Philips)</description>
 <part name="C4" library="resistor" deviceset="C-EU" device="050-030X075" value="100n"/>
 <part name="C5" library="resistor" deviceset="C-EU" device="050-030X075" value="100n"/>
 <part name="C6" library="resistor" deviceset="C-EU" device="050-030X075" value="100n"/>
+<part name="T36" library="PGT" deviceset="MPSA42" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8989,7 +8978,6 @@ high speed (Philips)</description>
 <instance part="T33" gate="G$1" x="43.18" y="147.32"/>
 <instance part="T34" gate="G$1" x="43.18" y="132.08"/>
 <instance part="T35" gate="G$1" x="43.18" y="116.84"/>
-<instance part="T36" gate="G$1" x="43.18" y="101.6"/>
 <instance part="T37" gate="G$1" x="43.18" y="86.36"/>
 <instance part="T38" gate="G$1" x="43.18" y="71.12"/>
 <instance part="T39" gate="G$1" x="43.18" y="55.88"/>
@@ -9015,6 +9003,7 @@ high speed (Philips)</description>
 <instance part="R54" gate="G$1" x="162.56" y="91.44"/>
 <instance part="SUPPLY11" gate="GND" x="50.8" y="12.7"/>
 <instance part="SUPPLY12" gate="GND" x="180.34" y="78.74"/>
+<instance part="T36" gate="G$1" x="43.18" y="101.6"/>
 </instances>
 <busses>
 </busses>
@@ -9029,8 +9018,8 @@ high speed (Philips)</description>
 <net name="N$68" class="0">
 <segment>
 <pinref part="R43" gate="G$1" pin="2"/>
-<pinref part="T36" gate="G$1" pin="B"/>
 <wire x1="38.1" y1="101.6" x2="40.64" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="T36" gate="G$1" pin="B"/>
 </segment>
 </net>
 <net name="N$69" class="0">
@@ -9139,7 +9128,6 @@ high speed (Philips)</description>
 <wire x1="45.72" y1="81.28" x2="50.8" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="81.28" x2="50.8" y2="66.04" width="0.1524" layer="91"/>
 <junction x="50.8" y="66.04"/>
-<pinref part="T36" gate="G$1" pin="E"/>
 <wire x1="45.72" y1="96.52" x2="50.8" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="96.52" x2="50.8" y2="81.28" width="0.1524" layer="91"/>
 <junction x="50.8" y="81.28"/>
@@ -9159,6 +9147,7 @@ high speed (Philips)</description>
 <wire x1="45.72" y1="157.48" x2="50.8" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="157.48" x2="50.8" y2="142.24" width="0.1524" layer="91"/>
 <junction x="50.8" y="142.24"/>
+<pinref part="T36" gate="G$1" pin="E"/>
 </segment>
 </net>
 <net name="N$82" class="0">
@@ -9237,11 +9226,11 @@ high speed (Philips)</description>
 </net>
 <net name="N$95" class="0">
 <segment>
-<pinref part="T36" gate="G$1" pin="C"/>
 <wire x1="45.72" y1="106.68" x2="60.96" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="106.68" x2="60.96" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="HOURS_UNITS" gate="G$1" pin="5"/>
 <wire x1="60.96" y1="93.98" x2="73.66" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="T36" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$96" class="0">
