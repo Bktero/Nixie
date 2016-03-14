@@ -7359,10 +7359,16 @@ high speed (Philips)</description>
 <instance part="C4" gate="G$1" x="73.66" y="50.8"/>
 <instance part="C5" gate="G$1" x="83.82" y="50.8"/>
 <instance part="C6" gate="G$1" x="93.98" y="50.8"/>
-<instance part="S2_MINUTE" gate="G$1" x="114.3" y="7.62"/>
-<instance part="S3_HOUR" gate="G$1" x="114.3" y="22.86"/>
+<instance part="S2_MINUTE" gate="G$1" x="114.3" y="7.62" smashed="yes" rot="R180">
+<attribute name="NAME" x="116.84" y="5.08" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="114.3" y="12.7" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="S3_HOUR" gate="G$1" x="114.3" y="25.4" smashed="yes" rot="R180">
+<attribute name="NAME" x="116.84" y="22.86" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="114.3" y="30.48" size="1.778" layer="96" rot="R180"/>
+</instance>
 <instance part="C7" gate="G$1" x="114.3" y="15.24" rot="R90"/>
-<instance part="C8" gate="G$1" x="114.3" y="30.48" rot="R90"/>
+<instance part="C8" gate="G$1" x="114.3" y="33.02" rot="R90"/>
 <instance part="IC7_AND" gate="A" x="218.44" y="55.88"/>
 <instance part="C9" gate="G$1" x="104.14" y="50.8"/>
 <instance part="IC7_AND" gate="P" x="99.06" y="48.26"/>
@@ -7444,21 +7450,23 @@ high speed (Philips)</description>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
-<pinref part="S2_MINUTE" gate="G$1" pin="1"/>
-<wire x1="111.76" y1="15.24" x2="109.22" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="15.24" x2="109.22" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="7.62" x2="109.22" y2="7.62" width="0.1524" layer="91"/>
-<junction x="109.22" y="7.62"/>
+<wire x1="93.98" y1="7.62" x2="106.68" y2="7.62" width="0.1524" layer="91"/>
 <label x="93.98" y="7.62" size="1.778" layer="95"/>
+<wire x1="111.76" y1="15.24" x2="106.68" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="15.24" x2="106.68" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="S2_MINUTE" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="7.62" x2="106.68" y2="7.62" width="0.1524" layer="91"/>
+<junction x="106.68" y="7.62"/>
 </segment>
 <segment>
 <pinref part="C8" gate="G$1" pin="1"/>
-<pinref part="S3_HOUR" gate="G$1" pin="1"/>
-<wire x1="111.76" y1="30.48" x2="109.22" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="30.48" x2="109.22" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="22.86" x2="109.22" y2="22.86" width="0.1524" layer="91"/>
-<junction x="109.22" y="22.86"/>
-<label x="93.98" y="22.86" size="1.778" layer="95"/>
+<wire x1="93.98" y1="25.4" x2="106.68" y2="25.4" width="0.1524" layer="91"/>
+<label x="93.98" y="25.4" size="1.778" layer="95"/>
+<wire x1="111.76" y1="33.02" x2="106.68" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="33.02" x2="106.68" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="S3_HOUR" gate="G$1" pin="2"/>
+<wire x1="106.68" y1="25.4" x2="109.22" y2="25.4" width="0.1524" layer="91"/>
+<junction x="106.68" y="25.4"/>
 </segment>
 </net>
 <net name="VHIGH" class="0">
@@ -8170,12 +8178,14 @@ high speed (Philips)</description>
 </net>
 <net name="ADD_MINUTE" class="0">
 <segment>
-<pinref part="S2_MINUTE" gate="G$1" pin="2"/>
 <label x="121.92" y="7.62" size="1.778" layer="95"/>
-<wire x1="119.38" y1="7.62" x2="129.54" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="119.38" y1="7.62" x2="119.38" y2="15.24" width="0.1524" layer="91"/>
-<junction x="119.38" y="7.62"/>
+<wire x1="121.92" y1="7.62" x2="129.54" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="15.24" x2="121.92" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="15.24" x2="121.92" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="S2_MINUTE" gate="G$1" pin="1"/>
+<wire x1="119.38" y1="7.62" x2="121.92" y2="7.62" width="0.1524" layer="91"/>
+<junction x="121.92" y="7.62"/>
 </segment>
 <segment>
 <pinref part="D13" gate="G$1" pin="A"/>
@@ -8185,12 +8195,14 @@ high speed (Philips)</description>
 </net>
 <net name="ADD_HOUR" class="0">
 <segment>
-<pinref part="S3_HOUR" gate="G$1" pin="2"/>
-<wire x1="129.54" y1="22.86" x2="119.38" y2="22.86" width="0.1524" layer="91"/>
-<label x="121.92" y="22.86" size="1.778" layer="95"/>
+<wire x1="129.54" y1="25.4" x2="121.92" y2="25.4" width="0.1524" layer="91"/>
+<label x="121.92" y="25.4" size="1.778" layer="95"/>
 <pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="119.38" y1="22.86" x2="119.38" y2="30.48" width="0.1524" layer="91"/>
-<junction x="119.38" y="22.86"/>
+<wire x1="119.38" y1="33.02" x2="121.92" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="33.02" x2="121.92" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="S3_HOUR" gate="G$1" pin="1"/>
+<wire x1="119.38" y1="25.4" x2="121.92" y2="25.4" width="0.1524" layer="91"/>
+<junction x="121.92" y="25.4"/>
 </segment>
 <segment>
 <pinref part="D15" gate="G$1" pin="A"/>
