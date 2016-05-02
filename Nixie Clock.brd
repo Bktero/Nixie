@@ -162,6 +162,8 @@
 <hole x="191.77" y="101.6" drill="3.2"/>
 <hole x="191.77" y="5.08" drill="3.2"/>
 <hole x="5.08" y="5.08" drill="3.2"/>
+<dimension x1="-0.33" y1="106.68" x2="196.85" y2="106.68" x3="98.26" y3="109.22" textsize="1.778" layer="20"/>
+<dimension x1="-0.33" y1="106.68" x2="-0.33" y2="-0.01" x3="-2.54" y3="53.335" textsize="1.778" layer="20"/>
 </plain>
 <libraries>
 <library name="PGT">
