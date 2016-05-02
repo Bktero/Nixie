@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -158,6 +158,10 @@
 <text x="190.5" y="80.01" size="1.778" layer="16" rot="MR0">TIME</text>
 <text x="3.81" y="35.56" size="1.778" layer="1">GND</text>
 <text x="3.81" y="31.75" size="1.778" layer="1">HIGH</text>
+<hole x="5.08" y="101.6" drill="3.2"/>
+<hole x="191.77" y="101.6" drill="3.2"/>
+<hole x="191.77" y="5.08" drill="3.2"/>
+<hole x="5.08" y="5.08" drill="3.2"/>
 </plain>
 <libraries>
 <library name="PGT">
