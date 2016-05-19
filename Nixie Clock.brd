@@ -1555,9 +1555,9 @@ design rules under a new name.</description>
 <param name="msDrill" value="24mil"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
-<param name="rvPadTop" value="0.4"/>
+<param name="rvPadTop" value="0.45"/>
 <param name="rvPadInner" value="0.25"/>
-<param name="rvPadBottom" value="0.4"/>
+<param name="rvPadBottom" value="0.45"/>
 <param name="rvViaOuter" value="0.5"/>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
