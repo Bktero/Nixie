@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -198,23 +198,23 @@
 <wire x1="4" y1="-5" x2="-4" y2="-5" width="0.127" layer="21"/>
 <wire x1="-4" y1="-5" x2="-4" y2="5" width="0.127" layer="21"/>
 </package>
-<package name="IN-14">
+<package name="IN-14-BIG-PADS">
 <description>IN-14 tubes</description>
 <wire x1="7.62" y1="0.1588" x2="-7.6201" y2="0" width="0.254" layer="21" curve="-180"/>
 <circle x="0" y="0" radius="8.8744" width="0.254" layer="21"/>
-<pad name="A" x="0" y="6.1899" drill="0.84" shape="square" rot="R180"/>
-<pad name="LHDP" x="-2.8766" y="5.4809" drill="0.84" rot="R180"/>
-<pad name="1" x="-5.0942" y="3.5163" drill="0.84" rot="R180"/>
-<pad name="2" x="-6.1448" y="0.7461" drill="0.84" rot="R180"/>
-<pad name="3" x="-5.7877" y="-2.195" drill="0.84" rot="R180"/>
-<pad name="4" x="-4.1047" y="-4.6332" drill="0.84" rot="R180"/>
-<pad name="5" x="-1.4813" y="-6.0101" drill="0.84" rot="R180"/>
-<pad name="6" x="1.4813" y="-6.0101" drill="0.84" rot="R180"/>
-<pad name="7" x="4.1047" y="-4.6332" drill="0.84" rot="R180"/>
-<pad name="8" x="5.7877" y="-2.195" drill="0.84" rot="R180"/>
-<pad name="9" x="6.1448" y="0.7461" drill="0.84" rot="R180"/>
-<pad name="0" x="5.0942" y="3.5163" drill="0.84" rot="R180"/>
-<pad name="RHDP" x="2.8766" y="5.4809" drill="0.84" rot="R180"/>
+<pad name="A" x="0" y="6.1899" drill="0.84" diameter="2.1844" shape="square" rot="R180"/>
+<pad name="LHDP" x="-2.8766" y="5.4809" drill="0.84" diameter="2.1844" rot="R180"/>
+<pad name="1" x="-5.0942" y="3.5163" drill="0.84" diameter="2.1844" rot="R180"/>
+<pad name="2" x="-6.1448" y="0.7461" drill="0.84" diameter="2.1844" rot="R180"/>
+<pad name="3" x="-5.7877" y="-2.195" drill="0.84" diameter="2.1844" rot="R180"/>
+<pad name="4" x="-4.1047" y="-4.6332" drill="0.84" diameter="2.1844" rot="R180"/>
+<pad name="5" x="-1.4813" y="-6.0101" drill="0.84" diameter="2.1844" rot="R180"/>
+<pad name="6" x="1.4813" y="-6.0101" drill="0.84" diameter="2.1844" rot="R180"/>
+<pad name="7" x="4.1047" y="-4.6332" drill="0.84" diameter="2.1844" rot="R180"/>
+<pad name="8" x="5.7877" y="-2.195" drill="0.84" diameter="2.1844" rot="R180"/>
+<pad name="9" x="6.1448" y="0.7461" drill="0.84" diameter="2.1844" rot="R180"/>
+<pad name="0" x="5.0942" y="3.5163" drill="0.84" diameter="2.1844" rot="R180"/>
+<pad name="RHDP" x="2.8766" y="5.4809" drill="0.84" diameter="2.1844" rot="R180"/>
 <text x="-11.2713" y="2.54" size="1.27" layer="25" rot="R270">&gt;NAME</text>
 <text x="-0.635" y="3.81" size="1.27" layer="21">A</text>
 <text x="-4.445" y="-2.54" size="1.27" layer="21">3</text>
@@ -1699,8 +1699,8 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="SECONDS_UNITS" library="PGT" package="IN-14" value="IN-14" x="163.83" y="11.43"/>
-<element name="SECONDS_TENS" library="PGT" package="IN-14" value="IN-14" x="142.24" y="11.43"/>
+<element name="SECONDS_UNITS" library="PGT" package="IN-14-BIG-PADS" value="IN-14BIG_PADS" x="163.83" y="11.43"/>
+<element name="SECONDS_TENS" library="PGT" package="IN-14-BIG-PADS" value="IN-14BIG_PADS" x="142.24" y="11.43"/>
 <element name="T1" library="PGT" package="TO92" value="MPSA42" x="170.18" y="38.1" rot="R315"/>
 <element name="T2" library="PGT" package="TO92" value="MPSA42" x="166.37" y="33.02" rot="R315"/>
 <element name="T3" library="PGT" package="TO92" value="MPSA42" x="162.56" y="38.1" rot="R315"/>
@@ -1735,8 +1735,8 @@ design rules under a new name.</description>
 <element name="R16" library="resistor" package="0207/10" value="33.3k" x="137.16" y="48.26" rot="R270"/>
 <element name="R17" library="resistor" package="0207/10" value="33.3k" x="133.35" y="48.26" rot="R270"/>
 <element name="R18" library="resistor" package="0207/10" value="33.3k" x="152.4" y="48.26" rot="R270"/>
-<element name="MINUTES_UNITS" library="PGT" package="IN-14" value="IN-14" x="111.76" y="11.43"/>
-<element name="MINUTES_TENS" library="PGT" package="IN-14" value="IN-14" x="90.17" y="11.43"/>
+<element name="MINUTES_UNITS" library="PGT" package="IN-14-BIG-PADS" value="IN-14BIG_PADS" x="111.76" y="11.43"/>
+<element name="MINUTES_TENS" library="PGT" package="IN-14-BIG-PADS" value="IN-14BIG_PADS" x="90.17" y="11.43"/>
 <element name="T16" library="PGT" package="TO92" value="MPSA42" x="109.22" y="38.1" rot="R315"/>
 <element name="T17" library="PGT" package="TO92" value="MPSA42" x="105.41" y="33.02" rot="R315"/>
 <element name="T18" library="PGT" package="TO92" value="MPSA42" x="101.6" y="38.1" rot="R315"/>
@@ -1771,8 +1771,8 @@ design rules under a new name.</description>
 <element name="R34" library="resistor" package="0207/10" value="33.3k" x="76.2" y="48.26" rot="R270"/>
 <element name="R35" library="resistor" package="0207/10" value="33.3k" x="72.39" y="48.26" rot="R270"/>
 <element name="R36" library="resistor" package="0207/10" value="33.3k" x="91.44" y="48.26" rot="R270"/>
-<element name="HOURS_UNITS" library="PGT" package="IN-14" value="IN-14" x="59.69" y="11.43"/>
-<element name="HOURS_TENS" library="PGT" package="IN-14" value="IN-14" x="38.1" y="11.43"/>
+<element name="HOURS_UNITS" library="PGT" package="IN-14-BIG-PADS" value="IN-14BIG_PADS" x="59.69" y="11.43"/>
+<element name="HOURS_TENS" library="PGT" package="IN-14-BIG-PADS" value="IN-14BIG_PADS" x="38.1" y="11.43"/>
 <element name="T32" library="PGT" package="TO92" value="MPSA42" x="48.26" y="38.1" rot="R315"/>
 <element name="T33" library="PGT" package="TO92" value="MPSA42" x="44.45" y="33.02" rot="R315"/>
 <element name="T34" library="PGT" package="TO92" value="MPSA42" x="40.64" y="38.1" rot="R315"/>

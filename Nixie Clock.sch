@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,17 +53,17 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -266,6 +266,28 @@ Lamp body is 6.2 mm-wide.</description>
 <pad name="P$2" x="1.27" y="0" drill="0.8" thermals="no"/>
 <circle x="0" y="0" radius="2.828425" width="0.127" layer="21"/>
 </package>
+<package name="IN-14-BIG-PADS">
+<description>IN-14 tubes</description>
+<wire x1="7.62" y1="0.1588" x2="-7.6201" y2="0" width="0.254" layer="21" curve="-180"/>
+<circle x="0" y="0" radius="8.8744" width="0.254" layer="21"/>
+<pad name="A" x="0" y="6.1899" drill="0.84" diameter="2.1844" shape="square" rot="R180"/>
+<pad name="LHDP" x="-2.8766" y="5.4809" drill="0.84" diameter="2.1844" rot="R180"/>
+<pad name="1" x="-5.0942" y="3.5163" drill="0.84" diameter="2.1844" rot="R180"/>
+<pad name="2" x="-6.1448" y="0.7461" drill="0.84" diameter="2.1844" rot="R180"/>
+<pad name="3" x="-5.7877" y="-2.195" drill="0.84" diameter="2.1844" rot="R180"/>
+<pad name="4" x="-4.1047" y="-4.6332" drill="0.84" diameter="2.1844" rot="R180"/>
+<pad name="5" x="-1.4813" y="-6.0101" drill="0.84" diameter="2.1844" rot="R180"/>
+<pad name="6" x="1.4813" y="-6.0101" drill="0.84" diameter="2.1844" rot="R180"/>
+<pad name="7" x="4.1047" y="-4.6332" drill="0.84" diameter="2.1844" rot="R180"/>
+<pad name="8" x="5.7877" y="-2.195" drill="0.84" diameter="2.1844" rot="R180"/>
+<pad name="9" x="6.1448" y="0.7461" drill="0.84" diameter="2.1844" rot="R180"/>
+<pad name="0" x="5.0942" y="3.5163" drill="0.84" diameter="2.1844" rot="R180"/>
+<pad name="RHDP" x="2.8766" y="5.4809" drill="0.84" diameter="2.1844" rot="R180"/>
+<text x="-11.2713" y="2.54" size="1.27" layer="25" rot="R270">&gt;NAME</text>
+<text x="-0.635" y="3.81" size="1.27" layer="21">A</text>
+<text x="-4.445" y="-2.54" size="1.27" layer="21">3</text>
+<text x="3.81" y="-2.54" size="1.27" layer="21">8</text>
+</package>
 </packages>
 <symbols>
 <symbol name="NPN">
@@ -378,6 +400,26 @@ Lamp body is 6.2 mm-wide.</description>
 </gates>
 <devices>
 <device name="" package="IN-14">
+<connects>
+<connect gate="G$1" pin="0" pad="0"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="LHDP" pad="LHDP"/>
+<connect gate="G$1" pin="RHDP" pad="RHDP"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="BIG_PADS" package="IN-14-BIG-PADS">
 <connects>
 <connect gate="G$1" pin="0" pad="0"/>
 <connect gate="G$1" pin="1" pad="1"/>
@@ -7183,8 +7225,8 @@ high speed (Philips)</description>
 </classes>
 <parts>
 <part name="FRAME1" library="frames" deviceset="LETTER_L" device="" value="TUBES_FOR_SECONDS"/>
-<part name="SECONDS_UNITS" library="PGT" deviceset="IN-14" device=""/>
-<part name="SECONDS_TENS" library="PGT" deviceset="IN-14" device=""/>
+<part name="SECONDS_UNITS" library="PGT" deviceset="IN-14" device="BIG_PADS" value="IN-14BIG_PADS"/>
+<part name="SECONDS_TENS" library="PGT" deviceset="IN-14" device="BIG_PADS" value="IN-14BIG_PADS"/>
 <part name="T1" library="PGT" deviceset="MPSA42" device=""/>
 <part name="T2" library="PGT" deviceset="MPSA42" device=""/>
 <part name="T3" library="PGT" deviceset="MPSA42" device=""/>
@@ -7222,8 +7264,8 @@ high speed (Philips)</description>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME2" library="frames" deviceset="LETTER_L" device="" value="TUBES_FOR_MINUTES"/>
-<part name="MINUTES_UNITS" library="PGT" deviceset="IN-14" device=""/>
-<part name="MINUTES_TENS" library="PGT" deviceset="IN-14" device=""/>
+<part name="MINUTES_UNITS" library="PGT" deviceset="IN-14" device="BIG_PADS" value="IN-14BIG_PADS"/>
+<part name="MINUTES_TENS" library="PGT" deviceset="IN-14" device="BIG_PADS" value="IN-14BIG_PADS"/>
 <part name="T16" library="PGT" deviceset="MPSA42" device=""/>
 <part name="T17" library="PGT" deviceset="MPSA42" device=""/>
 <part name="T18" library="PGT" deviceset="MPSA42" device=""/>
@@ -7261,8 +7303,8 @@ high speed (Philips)</description>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME3" library="frames" deviceset="LETTER_L" device="" value="TUBES_FOR_HOURS"/>
-<part name="HOURS_UNITS" library="PGT" deviceset="IN-14" device=""/>
-<part name="HOURS_TENS" library="PGT" deviceset="IN-14" device=""/>
+<part name="HOURS_UNITS" library="PGT" deviceset="IN-14" device="BIG_PADS" value="IN-14BIG_PADS"/>
+<part name="HOURS_TENS" library="PGT" deviceset="IN-14" device="BIG_PADS" value="IN-14BIG_PADS"/>
 <part name="T32" library="PGT" deviceset="MPSA42" device=""/>
 <part name="T33" library="PGT" deviceset="MPSA42" device=""/>
 <part name="T34" library="PGT" deviceset="MPSA42" device=""/>
